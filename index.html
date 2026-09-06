@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-hu="Toyota Highlander 2.5 Hybrid Comfort (2021) — eladó · Budapest" data-en="Toyota Highlander 2.5 Hybrid Comfort (2021) — for sale · Budapest">Toyota Highlander 2.5 Hybrid Comfort (2021) — eladó · Budapest</title>
+<meta name="description" content="Toyota Highlander 2.5 Hybrid Comfort, összkerékhajtás, 7 személyes. 2021, 92 933 km, első tulajdonos, teljes gyári szervizelőzmény. Budapest.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1726;--navy:#1B2C49;--accent:#2C7FB8;--accent-deep:#215d87;
+    --pewter:#7C899C;--line:#D9DEE7;--line-soft:#E7EBF1;--paper:#F4F6F9;
+    --card:#FFFFFF;--body:#3A4658;--ok:#1f7a52;--maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Instrument Sans",system-ui,sans-serif;color:var(--body);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 1}
+  h1,h2,h3,.disp{font-family:"Archivo",system-ui,sans-serif;color:var(--ink);letter-spacing:-.01em;line-height:1.08}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  header{position:sticky;top:0;z-index:60;background:rgba(244,246,249,.86);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line-soft)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .brand{display:flex;flex-direction:column;line-height:1.15}
+  .brand b{font-family:"Archivo";font-weight:700;font-size:15px;color:var(--ink)}
+  .brand span{font-size:12px;color:var(--pewter);letter-spacing:.02em}
+  .bar-right{display:flex;align-items:center;gap:14px}
+  .bar-price{font-family:"Archivo";font-weight:700;font-size:17px;color:var(--ink);white-space:nowrap}
+  .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+  .lang button{font-family:"Archivo";font-weight:600;font-size:12.5px;padding:6px 11px;border:0;background:transparent;color:var(--pewter);cursor:pointer;line-height:1}
+  .lang button.active{background:var(--ink);color:#fff}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:"Archivo";font-weight:600;font-size:14px;padding:11px 20px;border-radius:999px;border:1px solid transparent;background:var(--accent);color:#fff;text-decoration:none;cursor:pointer;transition:background .18s ease}
+  .btn:hover{background:var(--accent-deep)}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn.ghost:hover{background:#fff;border-color:var(--accent);color:var(--accent-deep)}
+
+  .hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+  .hero-img{position:absolute;inset:0;background:url('img/ext-front-3q.jpg') center 42%/cover no-repeat;transform:scale(1.04)}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,15,26,.86) 0%,rgba(9,15,26,.55) 40%,rgba(9,15,26,.12) 78%),linear-gradient(0deg,rgba(9,15,26,.78) 0%,rgba(9,15,26,0) 46%)}
+  .hero-inner{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px 54px}
+  .hero-meta{font-size:14px;letter-spacing:.04em;color:#cdd6e4;margin-bottom:14px}
+  .hero h1{color:#fff;font-weight:800;font-size:clamp(34px,6vw,60px)}
+  .hero h1 .sub{display:block;font-weight:500;font-size:clamp(16px,2.4vw,22px);color:#c6d2e6;margin-top:8px;letter-spacing:0}
+  .hero p.lead{max-width:52ch;color:#dbe2ee;font-size:clamp(15px,1.5vw,17px);margin:20px 0 22px}
+  .hero-price{font-family:"Archivo";font-weight:800;font-size:clamp(28px,4.4vw,42px);color:#fff}
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 26px}
+  .chip{font-size:13px;font-weight:500;color:#e7ecf4;padding:7px 14px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.06)}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+
+  .ledger{background:var(--ink);color:#e9edf4}
+  .ledger-grid{display:grid;grid-template-columns:repeat(6,1fr);max-width:var(--maxw);margin:0 auto}
+  .lg{padding:26px 22px;border-left:1px solid rgba(255,255,255,.09)}
+  .lg:first-child{border-left:0}
+  .lg .k{font-size:12px;letter-spacing:.05em;color:#8ea0bb;margin-bottom:6px}
+  .lg .v{font-family:"Archivo";font-weight:700;font-size:19px;color:#fff;line-height:1.2}
+  .lg .v small{display:block;font-weight:500;font-size:12px;color:#9fb0ca;letter-spacing:0;margin-top:3px}
+
+  section.blk{padding:74px 0}
+  .eyebrow{font-size:13px;font-weight:600;color:var(--accent);margin-bottom:10px}
+  .blk h2{font-size:clamp(24px,3.4vw,34px);font-weight:700}
+  .blk .h-note{color:var(--pewter);margin-top:8px;max-width:60ch}
+  .head{margin-bottom:38px}
+
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .gal figure{position:relative;overflow:hidden;border-radius:10px;background:#e6eaf0;cursor:zoom-in;aspect-ratio:4/3}
+  .gal figure.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+  .gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .gal figure:hover img{transform:scale(1.05)}
+  .gal figcaption{position:absolute;left:0;bottom:0;right:0;padding:20px 14px 10px;font-size:12.5px;color:#fff;background:linear-gradient(0deg,rgba(9,15,26,.7),transparent);opacity:0;transition:opacity .25s}
+  .gal figure:hover figcaption{opacity:1}
+
+  .spec-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:38px}
+  .spec-group h3{font-size:14px;font-weight:700;color:var(--ink);padding-left:14px;border-left:3px solid var(--accent);margin-bottom:16px}
+  .spec-group dl{display:grid;grid-template-columns:1fr auto;gap:0 16px}
+  .spec-group dt{padding:11px 0;border-top:1px solid var(--line-soft);color:var(--pewter);font-size:14px}
+  .spec-group dd{padding:11px 0;border-top:1px solid var(--line-soft);color:var(--ink);font-weight:600;font-size:14px;text-align:right}
+  .spec-group dl>dt:first-of-type,.spec-group dl>dd:first-of-type{border-top:0}
+
+  .feat-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+  .feat h3{font-size:14px;font-weight:700;color:var(--ink);padding-left:14px;border-left:3px solid var(--accent);margin-bottom:18px}
+  .feat ul{list-style:none}
+  .feat li{break-inside:avoid;display:flex;gap:9px;align-items:flex-start;padding:6px 0;font-size:14.5px;color:var(--body)}
+  .feat li svg{flex:0 0 auto;margin-top:3px}
+  .extras{margin-top:44px;border-top:1px solid var(--line);padding-top:34px}
+  .extra-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+  .extra{background:var(--card);border:1px solid var(--line-soft);border-radius:12px;padding:20px}
+  .extra .ico{width:40px;height:40px;border-radius:10px;background:#e8f1f8;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .extra b{font-family:"Archivo";font-size:15px;color:var(--ink);display:block;margin-bottom:4px}
+  .extra span{font-size:13px;color:var(--pewter)}
+  .tyre-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .tyre{background:var(--card);border:1px solid var(--line-soft);border-radius:14px;padding:26px}
+  .tyre .badge{display:inline-block;font-size:12px;font-weight:600;color:#fff;background:var(--accent);padding:4px 11px;border-radius:999px;margin-bottom:14px;font-family:"Archivo"}
+  .tyre .badge-win{background:var(--ink)}
+  .tyre h3{font-size:19px;margin-bottom:2px}
+  .tyre .model{color:var(--pewter);font-size:14px;margin-bottom:16px}
+  .tyre dl{display:grid;grid-template-columns:auto 1fr;gap:0 18px}
+  .tyre dt{padding:9px 0;border-top:1px solid var(--line-soft);color:var(--pewter);font-size:13.5px}
+  .tyre dd{padding:9px 0;border-top:1px solid var(--line-soft);color:var(--ink);font-weight:600;font-size:13.5px;text-align:right}
+  .tyre dl>dt:first-of-type,.tyre dl>dd:first-of-type{border-top:0}
+
+  .svc-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+  .timeline{position:relative;padding-left:26px}
+  .timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .tl{position:relative;padding:0 0 24px}
+  .tl:last-of-type{padding-bottom:0}
+  .tl::before{content:"";position:absolute;left:-26px;top:5px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--accent)}
+  .tl .km{font-family:"Archivo";font-weight:700;font-size:17px;color:var(--ink)}
+  .tl .dt{font-size:13px;color:var(--pewter)}
+  .tl .pl{font-size:13px;color:var(--body);margin-top:2px}
+  .svc-note{background:#eef4fa;border:1px solid #d7e5f1;border-radius:12px;padding:16px 18px;margin-top:24px;font-size:13.5px;color:var(--accent-deep)}
+  .proof{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .proof figure{border-radius:10px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in;background:#eee}
+  .proof img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+  .proof p{grid-column:1/-1;font-size:12.5px;color:var(--pewter);margin-top:2px}
+
+  .cond-wrap{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:start}
+  .pos-list{list-style:none}
+  .pos-list li{display:flex;gap:10px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line-soft);font-size:15px;color:var(--ink)}
+  .pos-list li:first-child{border-top:0}
+  .honest{background:#fbf6ec;border:1px solid #efe1c6;border-radius:14px;padding:26px}
+  .honest h3{font-size:16px;color:#7a5a12;margin-bottom:12px;display:flex;gap:9px;align-items:center}
+  .honest .intro{font-size:14px;color:#6d5a33;margin-bottom:6px}
+  .honest ul{list-style:none;margin:6px 0 0}
+  .honest li{padding:8px 0;font-size:14px;color:#6d5a33;border-top:1px dashed #e5d4ad}
+  .honest li:first-child{border-top:0}
+  .honest .fine{margin-top:14px;font-size:13px;color:#8a744a}
+
+  .contact{background:var(--ink);color:#e8edf5}
+  .contact .wrap{padding-top:70px;padding-bottom:70px}
+  .c-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .contact h2{color:#fff;font-size:clamp(26px,3.6vw,38px);font-weight:800}
+  .contact .big-price{font-family:"Archivo";font-weight:800;font-size:clamp(30px,5vw,46px);color:#fff;margin:18px 0 6px}
+  .contact .loc{color:#a9b7cd;font-size:15px}
+  .c-card{background:#16233b;border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:28px}
+  .c-row{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-top:1px solid rgba(255,255,255,.08);font-size:14px}
+  .c-row:first-child{border-top:0}
+  .c-row span{color:#93a3bd}
+  .c-row b{color:#fff;font-weight:600}
+  .c-row a{color:#fff;font-weight:600;text-decoration:none}
+  .c-actions{display:flex;flex-direction:column;gap:10px;margin-top:22px}
+  .c-actions .btn{width:100%;padding:14px}
+  .placeholder{color:#f0c674 !important}
+
+  footer{background:#0a121e;color:#7f8ca1;font-size:12.5px}
+  footer .wrap{padding:26px 24px;display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;align-items:center}
+
+  .lb{position:fixed;inset:0;z-index:200;background:rgba(6,10,18,.94);display:none;align-items:center;justify-content:center;padding:28px}
+  .lb.open{display:flex}
+  .lb img{max-width:92vw;max-height:86vh;border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+  .lb button{position:absolute;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;width:48px;height:48px;border-radius:50%;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .lb .close{top:22px;right:22px}
+  .lb .prev{left:20px;top:50%;transform:translateY(-50%)}
+  .lb .next{right:20px;top:50%;transform:translateY(-50%)}
+  .lb button:hover{background:rgba(255,255,255,.22)}
+  .lb .cnt{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:#c7d0df;font-size:13px}
+
+  .rv{opacity:0;transform:translateY(16px)}
+  .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+
+  @media (max-width:900px){
+    .ledger-grid{grid-template-columns:repeat(3,1fr)}
+    .lg:nth-child(4){border-left:0}
+    .lg:nth-child(-n+3){border-bottom:1px solid rgba(255,255,255,.09)}
+    .spec-cols{grid-template-columns:1fr 1fr}
+    .feat-wrap{grid-template-columns:1fr 1fr}
+    .svc-wrap,.cond-wrap,.c-grid{grid-template-columns:1fr;gap:30px}
+    .extra-grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:620px){
+    .wrap{padding:0 18px}.bar{padding:0 18px;gap:10px}
+    .brand span{display:none}.bar-price{display:none}
+    .ledger-grid{grid-template-columns:repeat(2,1fr)}
+    .lg{padding:20px 16px}
+    .lg:nth-child(-n+4){border-bottom:1px solid rgba(255,255,255,.09)}
+    .lg:nth-child(odd){border-left:0}
+    .tyre-grid{grid-template-columns:1fr}
+    .gal{grid-template-columns:1fr 1fr}
+    .gal figure.big{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+    .spec-cols,.feat-wrap{grid-template-columns:1fr}
+    .feat ul{columns:1}.extra-grid{grid-template-columns:1fr}
+    section.blk{padding:52px 0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto !important}
+    .rv{opacity:1;transform:none;transition:none}
+    .hero-img{transform:none}.gal figure:hover img{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="brand">
+      <b>Toyota Highlander</b>
+      <span data-hu="2.5 Hybrid Comfort · AWD · 7 személyes" data-en="2.5 Hybrid Comfort · AWD · 7 seats">2.5 Hybrid Comfort · AWD · 7 személyes</span>
+    </div>
+    <div class="bar-right">
+      <div class="bar-price">13 900 000 Ft</div>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="hu" class="active">HU</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="#kapcsolat" class="btn" data-hu="Időpontfoglalás" data-en="Book a viewing">Időpontfoglalás</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-img"></div>
+  <div class="hero-inner">
+    <div class="hero-meta rv" data-hu="2021 · 92 933 km · első tulajdonos · magyar okmányok" data-en="2021 · 92,933 km · one owner · Hungarian papers">2021 · 92 933 km · első tulajdonos · magyar okmányok</div>
+    <h1 class="rv"><span data-hu="Toyota Highlander Hybrid" data-en="Toyota Highlander Hybrid">Toyota Highlander Hybrid</span>
+      <span class="sub" data-hu="Comfort kivitel · összkerékhajtás · hétüléses" data-en="Comfort trim · all-wheel drive · seven seats">Comfort kivitel · összkerékhajtás · hétüléses</span>
+    </h1>
+    <p class="lead rv" data-hu="Teljes gyári szervizelőzménnyel rendelkező, balesetmentes hibrid SUV Budapesten. Első tulajdonostól, hivatalos Toyota-kereskedésből." data-en="An accident-free hybrid SUV in Budapest with a complete official service history. One owner, purchased from an authorised Toyota dealer.">Teljes gyári szervizelőzménnyel rendelkező, balesetmentes hibrid SUV Budapesten. Első tulajdonostól, hivatalos Toyota-kereskedésből.</p>
+    <div class="hero-price rv">13 900 000 Ft</div>
+    <div class="chips rv">
+      <span class="chip" data-hu="2.5 hibrid · 190 LE" data-en="2.5 hybrid · 190 hp">2.5 hibrid · 190 LE</span>
+      <span class="chip" data-hu="Összkerékhajtás (4WD)" data-en="All-wheel drive (4WD)">Összkerékhajtás (4WD)</span>
+      <span class="chip" data-hu="e-CVT automata" data-en="e-CVT automatic">e-CVT automata</span>
+      <span class="chip" data-hu="7 férőhely" data-en="7 seats">7 férőhely</span>
+      <span class="chip" data-hu="Bőr belső" data-en="Leather interior">Bőr belső</span>
+    </div>
+    <div class="hero-cta rv">
+      <a href="#kapcsolat" class="btn" data-hu="Megtekintés egyeztetése" data-en="Arrange a viewing">Megtekintés egyeztetése</a>
+      <a href="#galeria" class="btn ghost" data-hu="Galéria megtekintése" data-en="View gallery">Galéria megtekintése</a>
+    </div>
+  </div>
+</section>
+
+<div class="ledger">
+  <div class="ledger-grid">
+    <div class="lg"><div class="k" data-hu="Évjárat" data-en="Year">Évjárat</div><div class="v"><span data-hu="2021" data-en="2021">2021</span><small data-hu="forgalomba: 2021.12" data-en="registered 2021.12">forgalomba: 2021.12</small></div></div>
+    <div class="lg"><div class="k" data-hu="Futásteljesítmény" data-en="Mileage">Futásteljesítmény</div><div class="v"><span data-hu="92 933 km" data-en="92,933 km">92 933 km</span></div></div>
+    <div class="lg"><div class="k" data-hu="Motor" data-en="Engine">Motor</div><div class="v"><span data-hu="2.5 hibrid" data-en="2.5 hybrid">2.5 hibrid</span><small data-hu="190 LE" data-en="190 hp">190 LE</small></div></div>
+    <div class="lg"><div class="k" data-hu="Hajtás" data-en="Drivetrain">Hajtás</div><div class="v"><span data-hu="AWD" data-en="AWD">AWD</span><small data-hu="összkerék (4WD)" data-en="all-wheel (4WD)">összkerék (4WD)</small></div></div>
+    <div class="lg"><div class="k" data-hu="Tulajdonos" data-en="Owners">Tulajdonos</div><div class="v"><span data-hu="1" data-en="1">1</span><small data-hu="magyar okmányok" data-en="Hungarian papers">magyar okmányok</small></div></div>
+    <div class="lg"><div class="k" data-hu="Műszaki" data-en="MOT">Műszaki</div><div class="v"><span data-hu="2028.10" data-en="2028.10">2028.10</span><small data-hu="érvényes" data-en="valid until">érvényes</small></div></div>
+  </div>
+</div>
+
+<section class="blk wrap" id="galeria">
+  <div class="head rv">
+    <div class="eyebrow" data-hu="Galéria" data-en="Gallery">Galéria</div>
+    <h2 data-hu="A gépjármű részletesen" data-en="The vehicle in detail">A gépjármű részletesen</h2>
+    <p class="h-note" data-hu="Kültéri és beltéri felvételek. Kattintson a nagyításhoz." data-en="Exterior and interior photos. Click to enlarge.">Kültéri és beltéri felvételek. Kattintson a nagyításhoz.</p>
+  </div>
+  <div class="gal rv">
+    <figure class="big" data-full="img/day-front-3q.jpg"><img src="img/day-front-3q.jpg" alt="Toyota Highlander elöl-oldal"><figcaption data-hu="Elöl-oldal háromnegyedes nézet" data-en="Front three-quarter view">Elöl-oldal háromnegyedes nézet</figcaption></figure>
+    <figure data-full="img/ext-front-3q.jpg"><img src="img/ext-front-3q.jpg" alt="Highlander elölnézet"><figcaption data-hu="Elölnézet" data-en="Front view">Elölnézet</figcaption></figure>
+    <figure data-full="img/day-rear-3q.jpg"><img src="img/day-rear-3q.jpg" alt="Highlander hátsó háromnegyed"><figcaption data-hu="Hátsó háromnegyedes nézet" data-en="Rear three-quarter view">Hátsó háromnegyedes nézet</figcaption></figure>
+    <figure data-full="img/ext-side-left.jpg"><img src="img/ext-side-left.jpg" alt="Highlander oldalprofil"><figcaption data-hu="Oldalprofil" data-en="Side profile">Oldalprofil</figcaption></figure>
+    <figure data-full="img/det-grille.jpg"><img src="img/det-grille.jpg" alt="Highlander hűtőrács és embléma"><figcaption data-hu="Hűtőrács és embléma" data-en="Grille and badge">Hűtőrács és embléma</figcaption></figure>
+    <figure data-full="img/det-wheel.jpg"><img src="img/det-wheel.jpg" alt="Könnyűfém felni"><figcaption data-hu="Könnyűfém felni közelről" data-en="Alloy wheel detail">Könnyűfém felni közelről</figcaption></figure>
+    <figure data-full="img/det-hybrid.jpg"><img src="img/det-hybrid.jpg" alt="Hybrid embléma az ajtón"><figcaption data-hu="Hybrid embléma" data-en="Hybrid badge">Hybrid embléma</figcaption></figure>
+    <figure data-full="img/day-thule-rear.jpg"><img src="img/day-thule-rear.jpg" alt="Highlander Thule tetőboxszal"><figcaption data-hu="Thule tetőboxszal (tartozék)" data-en="With Thule roof box (included)">Thule tetőboxszal (tartozék)</figcaption></figure>
+    <figure data-full="img/det-roofrails.jpg"><img src="img/det-roofrails.jpg" alt="Tetősínek"><figcaption data-hu="Tetősínek és tetőbox-tartó" data-en="Roof rails and box mount">Tetősínek és tetőbox-tartó</figcaption></figure>
+    <figure data-full="img/winter-wheels.jpg"><img src="img/winter-wheels.jpg" alt="Téli gumi szett felnivel"><figcaption data-hu="Téli gumiszett (tartozék)" data-en="Winter tyre set (included)">Téli gumiszett (tartozék)</figcaption></figure>
+    <figure data-full="img/winter-tyre.jpg"><img src="img/winter-tyre.jpg" alt="Continental téli gumi könnyűfém felnin"><figcaption data-hu="Continental téli gumi · 235/65 R18" data-en="Continental winter tyres · 235/65 R18">Continental téli gumi · 235/65 R18</figcaption></figure>
+    <figure data-full="img/day-seats.jpg"><img src="img/day-seats.jpg" alt="Első bőrülések"><figcaption data-hu="Első bőrülések" data-en="Front leather seats">Első bőrülések</figcaption></figure>
+    <figure data-full="img/day-cabin.jpg"><img src="img/day-cabin.jpg" alt="Utastér"><figcaption data-hu="Utastér" data-en="Cabin">Utastér</figcaption></figure>
+    <figure data-full="img/day-dash.jpg"><img src="img/day-dash.jpg" alt="Műszerfal és kormány"><figcaption data-hu="Műszerfal és kormány" data-en="Dashboard and steering wheel">Műszerfal és kormány</figcaption></figure>
+    <figure data-full="img/int-console.jpg"><img src="img/int-console.jpg" alt="Középkonzol és multimédia"><figcaption data-hu="Multimédia · 3 zónás klíma" data-en="Multimedia · 3-zone climate">Multimédia · 3 zónás klíma</figcaption></figure>
+    <figure data-full="img/day-boot.jpg"><img src="img/day-boot.jpg" alt="Csomagtér"><figcaption data-hu="Csomagtér · lehajtható 3. üléssor" data-en="Boot · folding third row">Csomagtér · lehajtható 3. üléssor</figcaption></figure>
+    <figure data-full="img/det-door.jpg"><img src="img/det-door.jpg" alt="Ajtókapcsolók"><figcaption data-hu="Ajtópanel · ülésmemória" data-en="Door panel · seat memory">Ajtópanel · ülésmemória</figcaption></figure>
+    <figure data-full="img/int-sos.jpg"><img src="img/int-sos.jpg" alt="Tetőkonzol SOS vészhívóval"><figcaption data-hu="Tetőkonzol · e-Call / SOS" data-en="Overhead console · e-Call / SOS">Tetőkonzol · e-Call / SOS</figcaption></figure>
+  </div>
+</section>
+
+<section class="blk" style="background:var(--card);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow" data-hu="Műszaki adatok" data-en="Specifications">Műszaki adatok</div>
+      <h2 data-hu="Specifikáció" data-en="Specification">Specifikáció</h2>
+    </div>
+    <div class="spec-cols rv">
+      <div class="spec-group">
+        <h3 data-hu="Motor és hajtás" data-en="Engine &amp; drivetrain">Motor és hajtás</h3>
+        <dl>
+          <dt data-hu="Motor" data-en="Engine">Motor</dt><dd data-hu="2.5 l hibrid (benzin)" data-en="2.5 l hybrid (petrol)">2.5 l hibrid (benzin)</dd>
+          <dt data-hu="Teljesítmény" data-en="Power">Teljesítmény</dt><dd data-hu="190 LE" data-en="190 hp">190 LE</dd>
+          <dt data-hu="Hajtás" data-en="Drivetrain">Hajtás</dt><dd data-hu="összkerék (AWD-i)" data-en="all-wheel (AWD-i)">összkerék (AWD-i)</dd>
+          <dt data-hu="Váltó" data-en="Transmission">Váltó</dt><dd data-hu="fokozatmentes automata (e-CVT)" data-en="CVT automatic (e-CVT)">fokozatmentes automata (e-CVT)</dd>
+        </dl>
+      </div>
+      <div class="spec-group">
+        <h3 data-hu="Karosszéria és belső" data-en="Body &amp; interior">Karosszéria és belső</h3>
+        <dl>
+          <dt data-hu="Felszereltségi szint" data-en="Trim level">Felszereltségi szint</dt><dd>Comfort</dd>
+          <dt data-hu="Kivitel" data-en="Body">Kivitel</dt><dd data-hu="5 ajtós SUV" data-en="5-door SUV">5 ajtós SUV</dd>
+          <dt data-hu="Férőhely" data-en="Seats">Férőhely</dt><dd data-hu="7 fő" data-en="7 people">7 fő</dd>
+          <dt data-hu="Külső szín" data-en="Exterior colour">Külső szín</dt><dd data-hu="sötétkék metál (8X8)" data-en="dark blue metallic (8X8)">sötétkék metál (8X8)</dd>
+          <dt data-hu="Kárpit" data-en="Upholstery">Kárpit</dt><dd data-hu="bőr (F20)" data-en="leather (F20)">bőr (F20)</dd>
+        </dl>
+      </div>
+      <div class="spec-group">
+        <h3 data-hu="Okmányok és állapot" data-en="Papers &amp; condition">Okmányok és állapot</h3>
+        <dl>
+          <dt data-hu="Forgalomba helyezés" data-en="First registration">Forgalomba helyezés</dt><dd>2021.12.10</dd>
+          <dt data-hu="Futott" data-en="Mileage">Futott</dt><dd data-hu="92 933 km" data-en="92,933 km">92 933 km</dd>
+          <dt data-hu="Tulajdonosok" data-en="Owners">Tulajdonosok</dt><dd>1</dd>
+          <dt data-hu="Okmányok" data-en="Papers">Okmányok</dt><dd data-hu="magyar" data-en="Hungarian">magyar</dd>
+          <dt data-hu="Műszaki vizsga" data-en="MOT valid">Műszaki vizsga</dt><dd data-hu="2028.10-ig" data-en="until 2028.10">2028.10-ig</dd>
+          <dt data-hu="Alvázszám" data-en="VIN">Alvázszám</dt><dd>5TDLB3CH…7868</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk wrap">
+  <div class="head rv">
+    <div class="eyebrow" data-hu="Felszereltség" data-en="Equipment">Felszereltség</div>
+    <h2 data-hu="Komfort és biztonság" data-en="Comfort &amp; safety">Komfort és biztonság</h2>
+  </div>
+  <div class="feat-wrap rv">
+    <div class="feat">
+      <h3 data-hu="Komfort és belső" data-en="Comfort & interior">Komfort és belső</h3>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Bőrülések" data-en="Leather seats">Bőrülések</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Elektromos állítású első ülések (vezető + utas)" data-en="Power front seats (driver + passenger)">Elektromos állítású első ülések (vezető + utas)</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Első ülésfűtés" data-en="Heated front seats">Első ülésfűtés</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Kormányfűtés" data-en="Heated steering wheel">Kormányfűtés</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Bőrkormány" data-en="Leather steering wheel">Bőrkormány</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="3 zónás automata klíma" data-en="3-zone automatic climate control">3 zónás automata klíma</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Fűthető szélvédő" data-en="Heated windscreen">Fűthető szélvédő</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Csúsztatható 2. üléssor (7 ülés)" data-en="Sliding second row (7 seats)">Csúsztatható 2. üléssor (7 ülés)</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Sötétített hátsó üvegek" data-en="Privacy glass">Sötétített hátsó üvegek</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="18" könnyűfém felnik" data-en="18" alloy wheels">18" könnyűfém felnik</span></li>
+      </ul>
+    </div>
+    <div class="feat">
+      <h3 data-hu="Multimédia és technológia" data-en="Multimedia & technology">Multimédia és technológia</h3>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Toyota Touch 2 · 8" érintőképernyő" data-en="Toyota Touch 2 · 8" touchscreen">Toyota Touch 2 · 8" érintőképernyő</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Gyári navigáció" data-en="Built-in navigation">Gyári navigáció</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Apple CarPlay és Android Auto" data-en="Apple CarPlay and Android Auto">Apple CarPlay és Android Auto</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Vezeték nélküli telefontöltő" data-en="Wireless phone charger">Vezeték nélküli telefontöltő</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Intelligens kulcs (keyless)" data-en="Smart key (keyless entry & start)">Intelligens kulcs (keyless)</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Digitális műszeregység" data-en="Digital instrument cluster">Digitális műszeregység</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Tolatókamera" data-en="Reversing camera">Tolatókamera</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Parkolószenzorok (elöl-hátul)" data-en="Parking sensors (front & rear)">Parkolószenzorok (elöl-hátul)</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Automatikusan sötétedő tükör" data-en="Auto-dimming rear-view mirror">Automatikusan sötétedő tükör</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Elektromosan behajtható tükrök" data-en="Power-folding mirrors">Elektromosan behajtható tükrök</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Eső- és fényérzékelő" data-en="Rain and light sensor">Eső- és fényérzékelő</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Elektronikus rögzítőfék" data-en="Electronic parking brake">Elektronikus rögzítőfék</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="LED fényszórók" data-en="LED headlights">LED fényszórók</span></li>
+      </ul>
+    </div>
+    <div class="feat">
+      <h3 data-hu="Biztonság — Toyota Safety Sense" data-en="Safety — Toyota Safety Sense">Biztonság — Toyota Safety Sense</h3>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Ütközés előtti biztonsági rendszer" data-en="Pre-collision system (AEB)">Ütközés előtti biztonsági rendszer</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Adaptív tempomat (ACC)" data-en="Adaptive cruise control (ACC)">Adaptív tempomat (ACC)</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Sávtartó asszisztens" data-en="Lane-keep assist">Sávtartó asszisztens</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Közlekedésitábla-felismerés" data-en="Road-sign assist">Közlekedésitábla-felismerés</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Automata távfény" data-en="Automatic high beam">Automata távfény</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Holttérfigyelő" data-en="Blind-spot monitor">Holttérfigyelő</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Guminyomás-ellenőrzés (TPMS)" data-en="Tyre-pressure monitoring (TPMS)">Guminyomás-ellenőrzés (TPMS)</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="ABS és ESP" data-en="ABS and ESP">ABS és ESP</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="ISOFIX rögzítés" data-en="ISOFIX mounts">ISOFIX rögzítés</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Első, oldalsó és függönylégzsákok" data-en="Front, side and curtain airbags">Első, oldalsó és függönylégzsákok</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#2C7FB8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="e-Call / SOS vészhívó" data-en="e-Call / SOS emergency call">e-Call / SOS vészhívó</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="extras rv">
+    <div class="eyebrow" data-hu="Tartozékok" data-en="Included accessories">Tartozékok</div>
+    <h2 style="font-size:22px" data-hu="A vételár része" data-en="Part of the price">A vételár része</h2>
+    <div class="extra-grid">
+      <div class="extra">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M4 6l16 12M20 6L4 18" stroke="#2C7FB8" stroke-width="1.8" stroke-linecap="round"/><path d="M12 5l2.2 2.2M12 5L9.8 7.2M12 19l2.2-2.2M12 19l-2.2-2.2" stroke="#2C7FB8" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <b data-hu="Téli gumiszett felnivel" data-en="Winter tyre set on wheels">Téli gumiszett felnivel</b><span data-hu="4 db Continental téli gumi (M+S), 235/65 R18, gyári könnyűfém felnin" data-en="4× Continental winter tyres (M+S), 235/65 R18, on factory alloy wheels">4 db Continental téli gumi (M+S), 235/65 R18, gyári könnyűfém felnin</span>
+      </div>
+      <div class="extra">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="7" rx="3" stroke="#2C7FB8" stroke-width="1.8"/><path d="M7 8V6h10v2" stroke="#2C7FB8" stroke-width="1.8"/></svg></div>
+        <b data-hu="Thule tetőbox" data-en="Thule roof box">Thule tetőbox</b><span data-hu="Praktikus extra csomagtér utazáshoz" data-en="Extra luggage space for trips">Praktikus extra csomagtér utazáshoz</span>
+      </div>
+      <div class="extra">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 11a4 4 0 118 0" stroke="#2C7FB8" stroke-width="1.8"/><rect x="10.5" y="11" width="3" height="8" rx="1.5" stroke="#2C7FB8" stroke-width="1.8"/></svg></div>
+        <b data-hu="2 eredeti kulcs" data-en="2 original keys">2 eredeti kulcs</b><span data-hu="Mindkét gyári kulcs megvan" data-en="Both factory keys included">Mindkét gyári kulcs megvan</span>
+      </div>
+      <div class="extra">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="4" width="14" height="16" rx="2" stroke="#2C7FB8" stroke-width="1.8"/><path d="M8 9h8M8 13h6" stroke="#2C7FB8" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <b data-hu="Szervizkönyv" data-en="Service book">Szervizkönyv</b><span data-hu="Teljes, dokumentált előzménnyel" data-en="With full documented history">Teljes, dokumentált előzménnyel</span>
+      </div>
+    </div>
+      <div class="extra">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#2C7FB8" stroke-width="1.8"/><circle cx="12" cy="12" r="2.6" stroke="#2C7FB8" stroke-width="1.8"/></svg></div>
+        <b data-hu="Második szett felni" data-en="Second set of wheels">Második szett felni</b><span data-hu="Gyári könnyűfém felnik gumiabroncsokkal" data-en="Factory alloy wheels with tyres">Gyári könnyűfém felnik gumiabroncsokkal</span>
+      </div>
+      <div class="extra">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 11a4 4 0 118 0" stroke="#2C7FB8" stroke-width="1.8"/><rect x="10.5" y="11" width="3" height="8" rx="1.5" stroke="#2C7FB8" stroke-width="1.8"/></svg></div>
+        <b data-hu="2 eredeti kulcs" data-en="2 original keys">2 eredeti kulcs</b><span data-hu="Mindkét gyári kulcs megvan" data-en="Both factory keys included">Mindkét gyári kulcs megvan</span>
+      </div>
+      <div class="extra">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="4" width="14" height="16" rx="2" stroke="#2C7FB8" stroke-width="1.8"/><path d="M8 9h8M8 13h6" stroke="#2C7FB8" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <b data-hu="Szervizkönyv" data-en="Service book">Szervizkönyv</b><span data-hu="Teljes, dokumentált előzménnyel" data-en="With full documented history">Teljes, dokumentált előzménnyel</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk wrap" id="kerekek" style="border-top:1px solid var(--line-soft)">
+  <div class="head rv">
+    <div class="eyebrow" data-hu="Kerekek és gumik" data-en="Wheels &amp; tyres">Kerekek és gumik</div>
+    <h2 data-hu="Két teljes szett — nyári és téli" data-en="Two full sets — summer and winter">Két teljes szett — nyári és téli</h2>
+    <p class="h-note" data-hu="Az autó jelenleg nyári gumin gurul; a téli szett a vételár része. Mindkét szett nyomásérzékelővel (TPMS) szerelt." data-en="The car currently runs on summer tyres; the winter set is included in the price. Both sets are fitted with tyre-pressure sensors (TPMS).">Az autó jelenleg nyári gumin gurul; a téli szett a vételár része. Mindkét szett nyomásérzékelővel (TPMS) szerelt.</p>
+  </div>
+  <div class="tyre-grid rv">
+    <div class="tyre">
+      <span class="badge" data-hu="Felszerelve" data-en="Fitted">Felszerelve</span>
+      <h3 data-hu="Nyári gumi" data-en="Summer tyres">Nyári gumi</h3>
+      <div class="model">Michelin Latitude Tour HP</div>
+      <dl>
+        <dt data-hu="Méret" data-en="Size">Méret</dt><dd>235/65 R18</dd>
+        <dt data-hu="Jelölés" data-en="Marking">Jelölés</dt><dd>M+S</dd>
+        <dt data-hu="Felni" data-en="Wheels">Felni</dt><dd data-hu="gyári 18&quot; könnyűfém" data-en="factory 18&quot; alloy">gyári 18" könnyűfém</dd>
+        <dt data-hu="Jellemző" data-en="Character">Jellemző</dt><dd data-hu="halk, kopásálló, jó nedves fékhatás" data-en="quiet, hard-wearing, strong wet braking">halk, kopásálló, jó nedves fékhatás</dd>
+        <dt data-hu="TPMS" data-en="TPMS">TPMS</dt><dd data-hu="igen" data-en="yes">igen</dd>
+      </dl>
+    </div>
+    <div class="tyre">
+      <span class="badge badge-win" data-hu="A vételár része" data-en="Included in price">A vételár része</span>
+      <h3 data-hu="Téli gumi" data-en="Winter tyres">Téli gumi</h3>
+      <div class="model">Continental WinterContact</div>
+      <dl>
+        <dt data-hu="Méret" data-en="Size">Méret</dt><dd>235/65 R18</dd>
+        <dt data-hu="Terhelési index" data-en="Load index">Terhelési index</dt><dd>110H XL (Extra Load)</dd>
+        <dt data-hu="Jelölés" data-en="Marking">Jelölés</dt><dd data-hu="M+S + hópehely (3PMSF)" data-en="M+S + snowflake (3PMSF)">M+S + hópehely (3PMSF)</dd>
+        <dt data-hu="Gyártás" data-en="Made">Gyártás</dt><dd>2021 (DOT 2221)</dd>
+        <dt data-hu="Profilmélység" data-en="Tread depth">Profilmélység</dt><dd data-hu="8,5 mm (~25–29 ezer km)" data-en="8.5 mm (~25–29k km)">8,5 mm (~25–29 ezer km)</dd>
+        <dt data-hu="Felni" data-en="Wheels">Felni</dt><dd data-hu="eredeti Toyota (fekete-ezüst)" data-en="original Toyota (black-silver)">eredeti Toyota (fekete-ezüst)</dd>
+        <dt data-hu="TPMS" data-en="TPMS">TPMS</dt><dd data-hu="igen" data-en="yes">igen</dd>
+        <dt data-hu="Állapot" data-en="Condition">Állapot</dt><dd data-hu="kifogástalan használt" data-en="excellent, used">kifogástalan használt</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="blk" style="background:var(--card);border-top:1px solid var(--line-soft)">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow" data-hu="Szervizelőzmény" data-en="Service history">Szervizelőzmény</div>
+      <h2 data-hu="Teljes, hivatalos Toyota-szerviztörténet" data-en="Full official Toyota service history">Teljes, hivatalos Toyota-szerviztörténet</h2>
+      <p class="h-note" data-hu="Minden karbantartás a CarNet M5 hivatalos Toyota-márkaszervizben, Budapesten (1097 Gyáli út 42.)." data-en="All maintenance at the CarNet M5 authorised Toyota service centre in Budapest (1097 Gyáli út 42.).">Minden karbantartás a CarNet M5 hivatalos Toyota-márkaszervizben, Budapesten (1097 Gyáli út 42.).</p>
+    </div>
+    <div class="svc-wrap rv">
+      <div class="timeline">
+        <div class="tl"><div class="km">15 335 km</div><div class="dt">2022.07.12</div><div class="pl" data-hu="Időszakos karbantartás · CarNet M5" data-en="Scheduled maintenance · CarNet M5">Időszakos karbantartás · CarNet M5</div></div>
+        <div class="tl"><div class="km">28 741 km</div><div class="dt">2023.05.11</div><div class="pl" data-hu="Időszakos karbantartás · CarNet M5" data-en="Scheduled maintenance · CarNet M5">Időszakos karbantartás · CarNet M5</div></div>
+        <div class="tl"><div class="km">44 284 km</div><div class="dt">2023.12.19</div><div class="pl" data-hu="Időszakos karbantartás · CarNet M5" data-en="Scheduled maintenance · CarNet M5">Időszakos karbantartás · CarNet M5</div></div>
+        <div class="tl"><div class="km">58 590 km</div><div class="dt">2024.07.09</div><div class="pl" data-hu="Időszakos karbantartás · CarNet M5" data-en="Scheduled maintenance · CarNet M5">Időszakos karbantartás · CarNet M5</div></div>
+        <div class="tl"><div class="km">74 123 km</div><div class="dt">2025.07.04</div><div class="pl" data-hu="Időszakos karbantartás · CarNet M5" data-en="Scheduled maintenance · CarNet M5">Időszakos karbantartás · CarNet M5</div></div>
+        <div class="svc-note" data-hu="Első tulajdonostól, 2021-ben hivatalos magyar Toyota-kereskedésből vásárolva. A szervizkönyv és minden bélyegzett bejegyzés megvan." data-en="One owner, bought new from an authorised Hungarian Toyota dealer in 2021. The service book and every stamped entry are present.">Első tulajdonostól, 2021-ben hivatalos magyar Toyota-kereskedésből vásárolva. A szervizkönyv és minden bélyegzett bejegyzés megvan.</div>
+      </div>
+      <div class="proof">
+        <figure data-full="img/doc-servicebook.jpg"><img src="img/doc-servicebook.jpg" alt="Szervizkönyv azonosító adatok"></figure>
+        <figure data-full="img/doc-servicehistory.jpg"><img src="img/doc-servicehistory.jpg" alt="Szervizkönyv bélyegzett bejegyzések"></figure>
+        <p data-hu="Szervizkönyv — azonosító adatok és bélyegzett bejegyzések (kattintson a nagyításhoz)." data-en="Service book — identification data and stamped entries (click to enlarge).">Szervizkönyv — azonosító adatok és bélyegzett bejegyzések (kattintson a nagyításhoz).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk wrap">
+  <div class="head rv">
+    <div class="eyebrow" data-hu="Állapot" data-en="Condition">Állapot</div>
+    <h2 data-hu="Őszinte tájékoztatás" data-en="An honest note">Őszinte tájékoztatás</h2>
+    <p class="h-note" data-hu="A hirdetés célja, hogy minden fontos részletet előre lásson — a személyes megtekintéskor mindent ellenőrizhet." data-en="This listing aims to show every important detail up front — you can check everything in person at a viewing.">A hirdetés célja, hogy minden fontos részletet előre lásson — a személyes megtekintéskor mindent ellenőrizhet.</p>
+  </div>
+  <div class="cond-wrap rv">
+    <ul class="pos-list">
+      <li><svg width="18" height="18" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#1f7a52" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Balesetmentes" data-en="Accident-free">Balesetmentes</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#1f7a52" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Gyári fényezés minden karosszériaelemen" data-en="Factory paint on every body panel">Gyári fényezés minden karosszériaelemen</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#1f7a52" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Teljes, hivatalos szervizelőzmény" data-en="Full official service history">Teljes, hivatalos szervizelőzmény</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#1f7a52" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Első tulajdonos (hölgytől), magyar okmányok" data-en="One owner (a lady), Hungarian papers">Első tulajdonos (hölgytől), magyar okmányok</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 16 16"><path d="M13 4L6 11L3 8" stroke="#1f7a52" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-hu="Meglévő szervizkönyv és 2 eredeti kulcs" data-en="Service book present and 2 original keys">Meglévő szervizkönyv és 2 eredeti kulcs</span></li>
+    </ul>
+    <div class="honest">
+      <h3>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l9 16H3L12 3z" stroke="#9a6a12" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4M12 16.5v.5" stroke="#9a6a12" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span data-hu="Apró, jégverésből származó nyomok" data-en="Minor hail marks">Apró, jégverésből származó nyomok</span>
+      </h3>
+      <p class="intro" data-hu="A karosszérián néhány kisebb, kb. 1–1,5 cm-es beütés / horpadás található az alábbi helyeken:" data-en="There are a few small dents / marks of about 1–1.5 cm on the bodywork, in the following places:">A karosszérián néhány kisebb, kb. 1–1,5 cm-es beütés / horpadás található az alábbi helyeken:</p>
+      <ul>
+        <li data-hu="· Tető" data-en="· Roof">· Tető</li>
+        <li data-hu="· Motorháztető (néhány darab)" data-en="· Bonnet (a few)">· Motorháztető (néhány darab)</li>
+        <li data-hu="· Jobb oldali karosszéria, a felső kerékív környékén" data-en="· Right-hand side, around the upper wheel arch">· Jobb oldali karosszéria, a felső kerékív környékén</li>
+      </ul>
+      <p class="fine" data-hu="Ezek a nyomok a fotókon és személyesen is megtekinthetők. A kért ár ezt figyelembe veszi." data-en="These marks are visible in the photos and in person. The asking price already reflects them.">Ezek a nyomok a fotókon és személyesen is megtekinthetők. A kért ár ezt figyelembe veszi.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kapcsolat">
+  <div class="wrap">
+    <div class="c-grid rv">
+      <div>
+        <h2><span data-hu="Megtekintés Budapesten," data-en="Viewing in Budapest,">Megtekintés Budapesten,</span><br><span data-hu="előzetes egyeztetéssel" data-en="by appointment">előzetes egyeztetéssel</span></h2>
+        <div class="big-price">13 900 000 Ft</div>
+        <div class="loc" data-hu="A gépjármű Budapesten tekinthető meg. Kérjük, előzetesen egyeztessen időpontot." data-en="The vehicle can be viewed in Budapest. Please arrange a time in advance.">A gépjármű Budapesten tekinthető meg. Kérjük, előzetesen egyeztessen időpontot.</div>
+      </div>
+      <div class="c-card">
+        <div class="c-row"><span data-hu="Modell" data-en="Model">Modell</span><b>Highlander 2.5 Hybrid Comfort</b></div>
+        <div class="c-row"><span data-hu="Évjárat / futott" data-en="Year / mileage">Évjárat / futott</span><b data-hu="2021 · 92 933 km" data-en="2021 · 92,933 km">2021 · 92 933 km</b></div>
+        <div class="c-row"><span data-hu="Rendszám" data-en="Plate">Rendszám</span><b>SZK-659</b></div>
+        <div class="c-row"><span data-hu="Telefon" data-en="Phone">Telefon</span><a href="tel:+36303656729">+36 30 365 6729</a></div>
+        <div class="c-actions">
+          <a href="tel:+36303656729" class="btn" data-hu="Hívás: +36 30 365 6729" data-en="Call: +36 30 365 6729">Hívás: +36 30 365 6729</a>
+          <a href="https://wa.me/36303656729" class="btn ghost" style="border-color:rgba(255,255,255,.25);color:#fff" data-hu="Írjon WhatsAppon" data-en="Message on WhatsApp">Írjon WhatsAppon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div data-hu="Toyota Highlander 2.5 Hybrid Comfort (2021) · Budapest" data-en="Toyota Highlander 2.5 Hybrid Comfort (2021) · Budapest">Toyota Highlander 2.5 Hybrid Comfort (2021) · Budapest</div>
+    <div data-hu="A feltüntetett adatok tájékoztató jellegűek, nem minősülnek ajánlattételnek." data-en="The information shown is for guidance only and does not constitute a binding offer.">A feltüntetett adatok tájékoztató jellegűek, nem minősülnek ajánlattételnek.</div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" aria-hidden="true">
+  <button class="close" id="lbClose" aria-label="Bezárás / Close">✕</button>
+  <button class="prev" id="lbPrev" aria-label="Előző / Previous">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="next" id="lbNext" aria-label="Következő / Next">›</button>
+  <div class="cnt" id="lbCnt"></div>
+</div>
+
+<script>
+(function(){
+  /* ---- language ---- */
+  var lang='hu';
+  function setLang(l){
+    lang=l;
+    document.documentElement.setAttribute('lang',l);
+    document.querySelectorAll('[data-'+l+']').forEach(function(el){
+      var v=el.getAttribute('data-'+l); if(v!==null) el.textContent=v;
+    });
+    var t=document.querySelector('title'); if(t) document.title=t.getAttribute('data-'+l)||document.title;
+    document.querySelectorAll('.lang button').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-lang')===l);
+    });
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){ setLang(b.getAttribute('data-lang')); });
+  });
+
+  /* ---- reveal ---- */
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  window.addEventListener('load',function(){
+    document.querySelectorAll('.hero .rv').forEach(function(el,i){ setTimeout(function(){el.classList.add('in');},90*i); });
+  });
+
+  /* ---- lightbox ---- */
+  var figs=Array.prototype.slice.call(document.querySelectorAll('figure[data-full]'));
+  var srcs=figs.map(function(f){return {src:f.getAttribute('data-full'), alt:f.querySelector('img').alt};});
+  var lb=document.getElementById('lb'), img=document.getElementById('lbImg'), cnt=document.getElementById('lbCnt'), idx=0;
+  function show(i){ idx=(i+srcs.length)%srcs.length; img.src=srcs[idx].src; img.alt=srcs[idx].alt; cnt.textContent=(idx+1)+' / '+srcs.length; }
+  function open(i){ show(i); lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+  function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+  figs.forEach(function(f,i){ f.addEventListener('click',function(){open(i);}); });
+  document.getElementById('lbClose').onclick=close;
+  document.getElementById('lbNext').onclick=function(){show(idx+1);};
+  document.getElementById('lbPrev').onclick=function(){show(idx-1);};
+  lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowRight')show(idx+1);
+    if(e.key==='ArrowLeft')show(idx-1);
+  });
+})();
+</script>
+</body>
+</html>
