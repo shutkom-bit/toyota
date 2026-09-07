@@ -68,11 +68,13 @@ section.blk{padding:72px 0}
 .sub{color:var(--muted);margin:-16px 0 26px;max-width:64ch}
 
 /* included */
-.incgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.incgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .inccard{display:flex;align-items:center;gap:13px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;font-weight:600;font-size:14.5px;transition:transform .18s,box-shadow .18s,border-color .18s}
 .inccard:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(15,23,42,.08);border-color:#cfe0ff}
 .inccard .ic{width:42px;height:42px;flex:0 0 auto;border-radius:10px;background:#EAF1FE;display:flex;align-items:center;justify-content:center}
 .inccard .ic svg{width:22px;height:22px}
+.opt{display:flex;align-items:center;gap:11px;margin-top:18px;color:var(--muted);font-size:14px}
+.opt-badge{flex:0 0 auto;font-family:'Saira Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:11px;color:#8a6410;background:#FFF2D6;border:1px solid #F0DCA8;padding:4px 11px;border-radius:999px}
 
 /* gallery */
 .galgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -223,7 +225,8 @@ footer .wrap{padding:24px 26px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-
 
 <section class="blk"><div class="wrap">
   <div class="sec-head rv"><span class="tick"></span><h2><span data-hu="A vételár része" data-en="Included in the price">A vételár része</span></h2></div>
-  <div class="incgrid rv"><div class="inccard"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M4 6l16 12M20 6L4 18" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"/></svg></div><span><span data-hu="Téli gumiszett gyári felnin" data-en="Winter tyre set on factory alloys">Téli gumiszett gyári felnin</span></span></div><div class="inccard"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="7" rx="2.5" stroke="#2563EB" stroke-width="1.7"/><path d="M7 8V6h10v2" stroke="#2563EB" stroke-width="1.7"/></svg></div><span><span data-hu="Thule tetőbox" data-en="Thule roof box">Thule tetőbox</span></span></div><div class="inccard"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="4.5" stroke="#2563EB" stroke-width="1.7"/><path d="M12.5 12.5L20 20M17 17l2-2M15 15l2-2" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"/></svg></div><span><span data-hu="2 eredeti kulcs" data-en="2 original keys">2 eredeti kulcs</span></span></div><div class="inccard"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="4" width="14" height="16" rx="2" stroke="#2563EB" stroke-width="1.7"/><path d="M8 9h8M8 13h6" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"/></svg></div><span><span data-hu="Teljes szervizkönyv" data-en="Full service book">Teljes szervizkönyv</span></span></div></div>
+  <div class="incgrid rv"><div class="inccard"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M4 6l16 12M20 6L4 18" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"/></svg></div><span><span data-hu="Téli gumiszett gyári felnin" data-en="Winter tyre set on factory alloys">Téli gumiszett gyári felnin</span></span></div><div class="inccard"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="4.5" stroke="#2563EB" stroke-width="1.7"/><path d="M12.5 12.5L20 20M17 17l2-2M15 15l2-2" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"/></svg></div><span><span data-hu="2 eredeti kulcs" data-en="2 original keys">2 eredeti kulcs</span></span></div><div class="inccard"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="4" width="14" height="16" rx="2" stroke="#2563EB" stroke-width="1.7"/><path d="M8 9h8M8 13h6" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"/></svg></div><span><span data-hu="Teljes szervizkönyv" data-en="Full service book">Teljes szervizkönyv</span></span></div></div>
+  <p class="opt rv"><span class="opt-badge"><span data-hu="Opció" data-en="Optional">Opció</span></span><span><span data-hu="Thule tetőbox — külön megegyezés szerint elérhető, nem része az alapárnak." data-en="Thule roof box — available by separate agreement, not part of the base price.">Thule tetőbox — külön megegyezés szerint elérhető, nem része az alapárnak.</span></span></p>
 </div></section>
 
 <section class="blk alt"><div class="wrap">
