@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toyota-nu.vercel.app/sitemap.xml
